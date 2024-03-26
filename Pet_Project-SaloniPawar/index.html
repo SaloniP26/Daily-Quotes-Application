@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Quote of the Day</title>
+
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Include external JavaScript file -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+     <!-- Main content container -->
+    <div class="container">
+
+        <!-- Heading for the webpage -->
+        <h1>Quote of the Day</h1>
+
+        <!-- Container for displaying the quote and its mood -->
+        <div id="quote-container">
+            <p id="quote-text"></p>
+
+            <!-- <p> for displaying the mood icon -->
+            <p id="quote-mood">
+                <i id="mood-icon" class="icon"></i>
+            </p>    
+
+            <!-- label for displaying the error -->
+            <label id="error-label" class="error-label"></label>
+
+            <!-- Input field for adding a new quote -->
+            <div id="new-quote-container" style="display: none;">
+                <input type="text" id="new-quote" placeholder="Enter your new quote">
+                <button id="submit">Submit</button>
+            </div>    
+        </div>
+        
+        <!-- Container for buttons and select element -->
+        <div class="button-container">
+
+             <!-- Label for the mood selection dropdown -->
+            <label for="mood-select">Select Mood:</label>
+
+            <!-- Dropdown for selecting the mood -->
+            <select id="mood-select">
+                <option value="Happy">Happy</option>
+                <option value="Motivated">Motivated</option>
+                <option value="Calm">Calm</option>
+                <option value="Sad">Sad</option>
+            </select>
+
+            <!-- Button to get a new quote -->
+            <button id="new-quote-btn">New Quote</button>
+
+            <!-- Button to clear the displayed quote and reset mood selection -->
+            <button id="clear-btn">Clear</button>
+
+            <!-- Button to add a new quote -->
+            <button id="add-quote-btn">Add New Quote</button>
+        </div>
+    </div>
+</body>
+</html>
